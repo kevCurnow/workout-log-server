@@ -42,4 +42,15 @@ router.put('/:id', validateSession, (req, res) => {
     .catch(err => res.status(500).json({error: err}))
 })
 
+router.delete('/:id', validateSession, (req, res) => {
+    let userid = req.user.id
+    Log.destroy({
+        where: {
+            owner_id: userid, id: req.params.id
+        }
+    })
+    .then(log => res.status(200).send(`${log.description} was deleted.`))
+    .catch(err => res.status(500).json({error: err}))
+})
+
 module.exports = router;
