@@ -8,3 +8,6 @@
 
 ## Creating A New Workout Log
 ![New workout log](./assets/logpost.JPG)
+
+## Retrieving User's Logs
+![Logs by user](./assets/logget.JPG)
