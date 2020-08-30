@@ -11,3 +11,6 @@
 
 ## Retrieving User's Logs
 ![Logs by user](./assets/logget.JPG)
+
+## Retrieving A Specific Log
+![Specific log](./assets/logidget.JPG)
