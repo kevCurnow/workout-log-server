@@ -5,3 +5,6 @@
 
 ## Logging In An Existing User
 ![Logging in existing user](./assets/userlogin.png)
+
+## Creating A New Workout Log
+![New workout log](./assets/logpost.JPG)
