@@ -23,4 +23,14 @@ router.get('/', validateSession, (req, res) => {
     .catch(err => res.status(500).json({error: err}))
 })
 
+router.get('/:id', validateSession, (req, res) => {
+    let userid = req.user.id
+    Log.findOne({
+        where: {owner_id: userid, id: req.params.id}
+    })
+    .then(log => res.status(200).json(log))
+    .catch(err => res.status(500).json({error: err}))
+    
+})
+
 module.exports = router;
