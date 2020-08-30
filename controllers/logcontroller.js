@@ -36,8 +36,7 @@ router.put('/:id', validateSession, (req, res) => {
     let userid = req.user.id
     Log.update(req.body, { where: {owner_id: userid, id: req.params.id}})
     .then(log => res.status(200).json({
-        log: log,
-        message: `${log.description} was updated!`
+        message: `A log was updated!`
     }))
     .catch(err => res.status(500).json({error: err}))
 })

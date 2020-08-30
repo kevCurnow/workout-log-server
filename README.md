@@ -14,3 +14,7 @@
 
 ## Retrieving A Specific Log
 ![Specific log](./assets/logidget.JPG)
+
+## Updating A Log
+![Updating log](./assets/logidput.JPG)
+
