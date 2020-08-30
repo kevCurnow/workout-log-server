@@ -7,6 +7,9 @@ app.use(require('./middleware/headers'));
 let user = require("./controllers/usercontroller");
 app.use("/user", user);
 
+let log = require("./controllers/logcontroller");
+app.use("/log", log);
+
 let sequelize = require("./db");
 sequelize.sync();
 
