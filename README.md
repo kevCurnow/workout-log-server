@@ -2,3 +2,6 @@
 
 ## Registering A User
 ![Registering New User](./assets/userregister.png)
+
+## Logging In An Existing User
+![Logging in existing user](./assets/userlogin.png)
