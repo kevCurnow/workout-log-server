@@ -18,3 +18,5 @@
 ## Updating A Log
 ![Updating log](./assets/logidput.JPG)
 
+## Deleting A Log
+![Deleting log](./assets/logiddelete.JPG)

@@ -48,7 +48,7 @@ router.delete('/:id', validateSession, (req, res) => {
             owner_id: userid, id: req.params.id
         }
     })
-    .then(log => res.status(200).send(`${log.description} was deleted.`))
+    .then(log => res.status(200).send(`A log was deleted!`))
     .catch(err => res.status(500).json({error: err}))
 })
 
